@@ -190,11 +190,11 @@ def create_tf_record(output_filename,
 
 # TODO(derekjchow): Add test for pet/PASCAL main files.
 def main(_):
-    data_dir = r"C:\Work\05_Learning\01_Stage2_Record\DetectionData\TrainImagesCar"
-    label_map_dict =r"C:\Work\05_Learning\01_Stage2_Record\DetectionData\TrainImagesCar\labels_items.txt"
-    FLAGS.output_dir = r"C:\Work\05_Learning\01_Stage2_Record\DetectionData\TrainValidationDataTF"
-    # data_dir = FLAGS.data_dir
-    #label_map_dict = label_map_util.get_label_map_dict(FLAGS.label_map_path)
+    #data_dir = r"C:\Work\05_Learning\01_Stage2_Record\DetectionData\TrainImagesCar"
+    #label_map_dict =r"C:\Work\05_Learning\01_Stage2_Record\DetectionData\TrainImagesCar\labels_items.txt"
+    #FLAGS.output_dir = r"C:\Work\05_Learning\01_Stage2_Record\DetectionData\TrainValidationDataTF"
+    data_dir = FLAGS.data_dir
+    label_map_dict = label_map_util.get_label_map_dict(FLAGS.label_map_path)
     label_map_dict = label_map_util.get_label_map_dict(label_map_dict)
 
     logging.info('Reading from Pet dataset.')
